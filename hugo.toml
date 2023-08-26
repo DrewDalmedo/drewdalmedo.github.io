@@ -35,3 +35,15 @@ theme = 'diary'
     url = "/index.xml"
     name = "RSS Feed"
     weight = 4
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "onedark"
+    tabWidth = 4
