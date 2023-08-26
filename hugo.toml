@@ -1,55 +1,37 @@
 baseURL = 'https://drewdalmedo.github.io'
+DefaultContentLanguage = 'en'
 languageCode = 'en-us'
 title = 'Drew Dalmedo'
-theme = 'hello-friend-ng'
-paginate = 10
+theme = 'diary'
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  subtitle = "My personal site"
+  enableGitalk = false
+  enableGiscus = false
 
-  # Subtitle for home
-  homeSubtitle = "My personal blog"
+  # Twitter Card and Open Graph settings
+  enableOpenGraph = true
+  enableTwitterCards = true
+  title = "Drew Dalmedo"
+  description = "Drew Dalmedo's personal blog."
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+  [taxonomies]
+    tag = "tags"
+    category = "categories"
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-  
-  # Show a global language switcher in the navigation bar
-  enableGlobalLanguageMenu = false
-
-  # Metadata mostly used in document's head
-  description = "My personal blog"
-  keywords = "homepage, blog"
-  images = [""]
-
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-
-[languages]
-  [languages.en]
-    title = "Drew Dalmedo"
-    subtitle = "Tech, science, philosphy"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "Drew Dalmedo"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    url = "/categories"
+    name = "Categories"
+    weight = 2
+  [[menu.main]]
+    url = "/tags"
+    name = "Tags"
+    weight = 3
+  [[menu.main]]
+    url = "/posts"
+    name = "Archive"
+    weight = 1
+  [[menu.main]]
+    url = "/index.xml"
+    name = "RSS Feed"
+    weight = 4
