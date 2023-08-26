@@ -13,9 +13,7 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs.python311Packages; [
-            mkdocs-material
-            mkdocs-material-extensions
+          packages = with pkgs; [
           ];
         };
       });
