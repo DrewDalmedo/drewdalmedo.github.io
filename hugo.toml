@@ -27,14 +27,14 @@ theme = 'diary'
     url = "/about"
     name = "About Me"
     weight = 2
-  [[menu.main]]
-    url = "/categories"
-    name = "Categories"
-    weight = 3
-  [[menu.main]]
-    url = "/tags"
-    name = "Tags"
-    weight = 4
+  #[[menu.main]]
+  #  url = "/categories"
+  #  name = "Categories"
+  #  weight = 3
+  #[[menu.main]]
+  #  url = "/tags"
+  #  name = "Tags"
+  #  weight = 4
   [[menu.main]]
     url = "/index.xml"
     name = "RSS Feed"
