@@ -5,9 +5,12 @@ title = 'Drew Dalmedo'
 theme = 'diary'
 
 [params]
-  subtitle = "My personal site"
+  subtitle = "My personal site."
   enableGitalk = false
   enableGiscus = false
+
+  # show estimated reading time
+  enableReadingTime = true
 
   # Twitter Card and Open Graph settings
   enableOpenGraph = true
