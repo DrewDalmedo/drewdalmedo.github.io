@@ -9,7 +9,7 @@ Ensure you have [nix installed](https://nixos.org/download) and [flakes enabled]
 After enabling flakes, enter the following commands:
 
 ```sh
-git clone https://github.com/DrewDalmedo/drewdalmedo.github.io drews-site
+git clone --recursive https://github.com/DrewDalmedo/drewdalmedo.github.io drews-site
 cd drews-site
 nix develop
 ```
