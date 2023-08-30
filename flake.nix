@@ -16,8 +16,13 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
+          shellHook = ''
+            echo "Updating git submodules..."
+            (git submodule update --init --recursive && echo Done.) || echo "Failed to install git submodules. Please run 'git submodule update --init --recursive' to install the site's theme."
+          '';
           packages = with pkgs; [
             hugo
+            git                     # git is likely already installed, but ensure it is installed so we can download submodules in shell hook
           ];
         };
       });
