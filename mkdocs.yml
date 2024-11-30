@@ -1,0 +1,4 @@
+site_name: Empirical Ops Notes
+site_url: https://drewdalmedo.github.io
+theme:
+  name: material
