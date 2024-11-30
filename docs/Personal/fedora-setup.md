@@ -122,3 +122,4 @@ This will remove unneeded packages such as the `hello` package we used earlier t
 - [Determinate System Nix Installer](https://determinate.systems/posts/determinate-nix-installer/)
 - [Red Tomato's Blog](https://tech.aufomm.com/my-nix-journey-use-nix-with-ubuntu/)
 - [My Nixvim Config](https://github.com/DrewDalmedo/nixvimrc)
+- [Devenv](https://devenv.sh/)
